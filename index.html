@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>오준우</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <style>
+  body {
+      font: 20px Montserrat, sans-serif;
+      line-height: 1.8;
+      color: #f5f6f7;
+  }
+  p {font-size: 16px;}
+  .margin {margin-bottom: 45px;}
+  .bg-1 {
+      background-color: #1abc9c; /* Green */
+      color: #ffffff;
+  }
+  .bg-2 {
+      background-color: #474e5d; /* Dark Blue */
+      color: #ffffff;
+  }
+  .bg-3 {
+      background-color: #ffffff; /* White */
+      color: #555555;
+  }
+  .bg-4 {
+      background-color: #2f2f2f; /* Black Gray */
+      color: #fff;
+  }
+  .container-fluid {
+      padding-top: 70px;
+      padding-bottom: 70px;
+  }
+  .navbar {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      border: 0;
+      border-radius: 0;
+      margin-bottom: 0;
+      font-size: 12px;
+      letter-spacing: 5px;
+  }
+  .navbar-nav  li a:hover {
+      color: #1abc9c !important;
+  }
+  .rotate {
+      transform: rotate(90deg);
+  }
+  .port_margin {
+      margin-bottom: 20px;
+  }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="http://192.168.219.163:8080/portfolio/">
+        JW
+      </a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#section1">WHO</a></li>
+        <li><a href="#section2">PORTFOLIO</a></li>
+        <li><a href="#section3">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- First Container -->
+<section id="section1">
+  <div class="container-fluid bg-1 text-center">
+    <h3 class="margin">Who Am I ?</h3>
+
+    <img src="http://192.168.219.163:8080/portfolio/img/yellowjw1.jpg" class="img-responsive img-circle margin rotate" style="display:inline" alt="me" width="350" height="350">
+    <h4>
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="glyphicon glyphicon-cog"></span>
+      <span class="glyphicon glyphicon-chevron-right"></span>
+    </h4>
+    <h3>개발자를 꿈꾸는 오준우</h3>
+  </div>
+</section>
+
+<!-- Second Container -->
+<!--<section id="section2">
+  <div class="container-fluid bg-2 text-center">
+    <h3 class="margin">MOTIVE</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+    <a href="#" class="btn btn-default btn-lg">
+      <span class="glyphicon glyphicon-search"></span> Search
+    </a>
+  </div>
+</section>
+-->
+
+<!-- Third Container (Grid) -->
+<section id="section2">
+  <div class="container-fluid bg-3 text-center">
+    <h3 class="margin" style="margin-bottom:20px">Portfolio</h3><br>
+    <div class="row">
+      <div class="col-sm-4">
+        <p class="port_margin"><strong>Key for Shopping</strong></p>
+        <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>-->
+        <a href="http://192.168.219.163:8080/portfolio/portfolio.php?pid=p1">
+           <img src="http://192.168.219.163:8080/portfolio/img/port1.jpg" class="img-responsive margin shade" style="width:100%" alt="port1">
+        </a>
+        <p class="port_margin">Apache, PHP, My-SQL</p>
+      </div>
+      <div class="col-sm-4">
+        <p class="port_margin"><strong>Travel ME</strong></p>
+        <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>-->
+        <a href="http://192.168.219.163:8080/portfolio/portfolio.php?pid=p2">
+          <img src="http://192.168.219.163:8080/portfolio/img/port2.jpg" class="img-responsive margin" style="width:100%" alt="port2">
+        </a>
+        <p class="port_margin">Apache(Tomcat), Java(Spring), Oracle</p>
+      </div>
+      <div class="col-sm-4">
+        <p class="port_margin"><strong>Don't Wally</strong></p>
+        <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>-->
+        <a href="http://192.168.219.163:8080/portfolio/portfolio.php?pid=p3">
+          <img src="http://192.168.219.163:8080/portfolio/img/port3.jpg" class="img-responsive margin" style="width:100%" alt="port3">
+        </a>
+        <p class="port_margin">Java, PhotoShop, Flash</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<section id="section3">
+<footer class="container-fluid bg-4 text-center">
+  <h3 class="margin">Contact me</h3>
+  <span class="glyphicon glyphicon-earphone"></span>
+  <p>010-3757-8414</p>
+  <span class="glyphicon glyphicon-envelope"></span>
+  <p>ojoonwoo@gmail.com</p>
+</footer>
+</section>
+</body>
+</html>

@@ -8,6 +8,13 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="bootstrap-3.3.4-dist/js/bootstrap.min.js"></script>
+ <!--  <script>
+    $('#port_modal1').click(function() {
+      var modNum = document.getElementById("mod1");
+      var data = modNum.getAttribute("data");
+      alert(data);
+    });
+  </script> -->
   <style>
   body {
       font: 20px Montserrat, sans-serif;
@@ -53,7 +60,58 @@
   </style>
 </head>
 <body>
-
+  <!-- Modal -->
+  <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        </div>
+        <div class="modal-body">
+          <object type='application/pdf' data='https://ojoonwoo.github.io/img/portfolio1.pdf' width='100%' height='800' id="mod1">
+          <param name='src' value='portfolio.pdf'>
+          </object>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        </div>
+        <div class="modal-body">
+          <object type='application/pdf' data='https://ojoonwoo.github.io/img/portfolio2.pdf' width='100%' height='800' id="mod2">
+          <param name='src' value='portfolio.pdf'>
+          </object>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        </div>
+        <div class="modal-body">
+          <object type='application/pdf' data='https://ojoonwoo.github.io/img/portfolio3.pdf' width='100%' height='800' id="mod3">
+          <param name='src' value='portfolio.pdf'>
+          </object>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
 <!-- Navbar -->
 <nav class="navbar navbar-default">
   <div class="container">
@@ -76,7 +134,6 @@
     </div>
   </div>
 </nav>
-
 <!-- First Container -->
 <section id="section1">
   <div class="container-fluid bg-1 text-center">
@@ -92,8 +149,6 @@
     <h3>좋은 개발자를 꿈꾸는 <strong>오준우</strong></h3>
   </div>
 </section>
-
-
 <!-- Container (Grid) -->
 <section id="section2">
   <div class="container-fluid bg-2 text-center">
@@ -101,21 +156,21 @@
     <div class="row">
       <div class="col-sm-4">
         <p class="port_margin"><strong>Key for Shopping</strong></p>
-        <a href="https://ojoonwoo.github.io/portfolio1.html">
+        <a href="#" data-toggle="modal" data-target="#myModal1" id="port_modal1">
            <img src="https://ojoonwoo.github.io/img/port1.jpg" class="img-responsive margin" style="width:100%" alt="port1">
         </a>
         <p class="port_margin">Apache, PHP, My-SQL</p>
       </div>
       <div class="col-sm-4">
         <p class="port_margin"><strong>Travel ME</strong></p>
-        <a href="https://ojoonwoo.github.io/portfolio2.html">
+        <a href="#" data-toggle="modal" data-target="#myModal2" id="port_modal2">
           <img src="https://ojoonwoo.github.io/img/port2.jpg" class="img-responsive margin" style="width:100%" alt="port2">
         </a>
         <p class="port_margin">Apache(Tomcat), Java(Spring), Oracle</p>
       </div>
       <div class="col-sm-4">
         <p class="port_margin"><strong>Don't Wally</strong></p>
-        <a href="https://ojoonwoo.github.io/portfolio3.html">
+        <a href="#" data-toggle="modal" data-target="#myModal3" id="port_modal3">
           <img src="https://ojoonwoo.github.io/img/port3.jpg" class="img-responsive margin" style="width:100%" alt="port3">
         </a>
         <p class="port_margin">Java, PhotoShop, Flash</p>
@@ -123,7 +178,6 @@
     </div>
   </div>
 </section>
-
 <!-- Footer -->
 <section id="section3">
 <footer class="container-fluid bg-3 text-center">
